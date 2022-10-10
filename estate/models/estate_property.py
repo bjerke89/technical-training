@@ -33,7 +33,7 @@ class RealEstate(models.Model):
     )
 
     property_type_id = fields.Many2one("property.type", string="Property Type")
-    salesperson = fields.Many2one("res.users", "Salesperson",default=lambda self: self.env.user)
-    buyer = fields.Many2one("res.partner", "Buyer",copy=False)
+    #salesperson = fields.Many2one("res.users", "Salesperson",default=lambda self: self.env.user)
+    #buyer = fields.Many2one("res.partner", "Buyer",copy=False)
     tags = fields.Many2one("property.tag")
 
