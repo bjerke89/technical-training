@@ -1,3 +1,13 @@
-<menuitem id="estate_menu_root" name="Real Estate" />
-<menuitem id="advertisements_menu" name="Advertisements" parent="estate_menu_root" sequence="1" />
-<menuitem id="properties_model_menu_action" action="properties_model_action" name="Properties" parent="advertisements_menu" />
+<odoo>
+    <data>
+        <menuitem id="estate_menu_root" name="Real Estate">
+            <menuitem id="advertisements_menu" name="Advertisements">
+                <menuitem id="properties_model_menu_action" action="properties_model_action" name="Properties"/>
+            </menuitem>
+        </menuitem>
+    </data>
+</odoo>
+
+
+    
+    
