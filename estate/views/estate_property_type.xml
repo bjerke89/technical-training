@@ -1,23 +1,13 @@
 <odoo>
 	<data>
 		<record id="property_type_model_action" model="ir.actions.act_window">
-			<field name="name">
-				Property Types
-			</field>
-			<field name="res_model">
-				property.type
-			</field>
-			<field name="view_mode">
-				tree,form
-			</field>
+			<field name="name">Property Types</field>
+			<field name="res_model">property.type</field>
+			<field name="view_mode">tree,form</field>
 		</record>
 		<record id="propterties_view_tree" model="ir.ui.view">
-			<field name="name">
-				property.types.tree
-			</field>
-			<field name="model">
-				property.type
-			</field>
+			<field name="name">property.types.tree</field>
+			<field name="model">property.type</field>
 			<field name="arch" type="xml">
 				<tree string="Properties">
 					<field name="name" string="Property Type" />

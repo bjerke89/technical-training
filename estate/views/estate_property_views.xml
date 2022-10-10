@@ -1,23 +1,13 @@
 <odoo>
 	<data>
 		<record id="properties_model_action" model="ir.actions.act_window">
-			<field name="name">
-				Properties
-			</field>
-			<field name="res_model">
-				estate.property
-			</field>
-			<field name="view_mode">
-				tree,form
-			</field>
+			<field name="name">Properties</field>
+			<field name="res_model">estate.property</field>
+			<field name="view_mode">tree,form</field>
 		</record>
 		<record id="propterties_view_tree" model="ir.ui.view">
-			<field name="name">
-				estate.properties.tree
-			</field>
-			<field name="model">
-				estate.property
-			</field>
+			<field name="name">estate.properties.tree</field>
+			<field name="model">estate.property</field>
 			<field name="arch" type="xml">
 				<tree string="Properties">
 					<field name="name" string="Title" />
@@ -31,12 +21,8 @@
 			</field>
 		</record>
 		<record id="propterties_view_form" model="ir.ui.view">
-			<field name="name">
-				estate.properties.form
-			</field>
-			<field name="model">
-				estate.property
-			</field>
+			<field name="name">estate.properties.form</field>
+			<field name="model">estate.property</field>
 			<field name="arch" type="xml">
 				<form string="New Property">
 					<sheet>
@@ -76,12 +62,8 @@
 			</field>
 		</record>
 		<record id="view_estate_search" model="ir.ui.view">
-			<field name="name">
-				estate.properties.search
-			</field>
-			<field name="model">
-				estate.property
-			</field>
+			<field name="name">estate.properties.search</field>
+			<field name="model">estate.property</field>
 			<field name="arch" type="xml">
 				<search string="Properties">
 					<field name="name" string="Title" />
