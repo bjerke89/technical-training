@@ -28,9 +28,6 @@
         <field name="arch" type="xml">
             <form string="New Property">
                 <sheet>
-					<div class="oe_edit_only">
-						<label string="Title" for="name"/>
-					</div>
 					<h1>
 						<div class="oe_title">
 							<field name="name"/>
@@ -58,6 +55,7 @@
 								<field name="garden_area" string="Garden Area (sqm)"/>
 								<field name="garden_orientation"/>
 								<field name="active"/>
+                                <field name="state" string="Status"/>
 							</group>
 						</page>
                     </notebook>
@@ -65,5 +63,25 @@
             </form>
         </field>
     </record>
+
+    <record id="view_estate_search" model="ir.ui.view">
+            <field name="name">estate.properties.search</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <search string="Properties">
+                    <field name="name" string="Title" />
+					<field name="postcode" string="Postcode"/>
+					<field name="expected_price" string="Expected Price"/>
+					<field name="bedrooms" string="Bedrooms"/>
+					<field name="living_area" string="Living Area"/>
+					<field name="facades" string="Facades"/>
+					<separator/>
+					<filter string="Available" name="available" domain="['|', ('state', '=', 'new'), ('state', '=', 'offer_received')]"/>
+					<group expand="1" string="Group By">
+						<filter string="Postcode" name="postcode" context="{'group_by':'postcode', 'residual_visible':True}"/>
+					</group>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
