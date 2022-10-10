@@ -9,7 +9,7 @@
 			<field name="name">property.types.tree</field>
 			<field name="model">property.type</field>
 			<field name="arch" type="xml">
-				<tree string="Properties">
+				<tree string="Property Types">
 					<field name="name" string="Property Type" />
 				</tree>
 			</field>

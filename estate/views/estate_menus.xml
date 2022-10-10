@@ -5,7 +5,8 @@
                 <menuitem id="properties_model_menu_action" action="properties_model_action" name="Properties"/>
             </menuitem>
             <menuitem id="settings_menu" name="Settings" sequence="2" parent="estate_menu_root">
-                <menuitem id="properties_model_menu_action" action="property_type_model_action" name="Property Types"/>
+                <menuitem id="property_types_model_menu_action" action="property_type_model_action" name="Property Types"/>
+                <menuitem id="property_tags_model_menu_action" action="property_tag_model_action" name="Property Tags"/>
             </menuitem>
         </menuitem>
     </data>
