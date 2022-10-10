@@ -32,3 +32,5 @@ class RealEstate(models.Model):
         copy=False
     )
 
+    property_type_id = fields.Many2one("property.type", string="Property Type")
+

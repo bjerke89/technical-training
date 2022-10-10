@@ -1,8 +1,11 @@
 <odoo>
     <data>
         <menuitem id="estate_menu_root" name="Real Estate">
-            <menuitem id="advertisements_menu" name="Advertisements">
+            <menuitem id="advertisements_menu" name="Advertisements" sequence="1">
                 <menuitem id="properties_model_menu_action" action="properties_model_action" name="Properties"/>
+            </menuitem>
+            <menuitem id="settings_menu" name="Settings" sequence="2">
+                <menuitem id="properties_model_menu_action" action="property_type_model_action" name="Property Types"/>
             </menuitem>
         </menuitem>
     </data>
