@@ -5,11 +5,11 @@
 			<field name="res_model">property.tag</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<record id="propterties_view_tree" model="ir.ui.view">
+		<record id="propterties_tags_view_tree" model="ir.ui.view">
 			<field name="name">property.tags.tree</field>
 			<field name="model">property.tag</field>
 			<field name="arch" type="xml">
-				<tree string="Property Tags">
+				<tree string="Property Tags" editable="bottom">
 					<field name="name" string="Property Tags" />
 				</tree>
 			</field>
